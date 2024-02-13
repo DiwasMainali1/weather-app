@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background:rgb(124, 89, 253);
+    height: 100vh;
+}
+
+.container {
+    width: 540px;
+    height: 600px;
+    background-color: rgb(244, 255, 235);
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.city {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.city input{
+    display: flex;
+    width: 250px;
+    height: 50px;
+    border: none;
+    outline: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 18px;
+    border-radius: 50px;
+    box-shadow: 4px 3px 10px 1px rgba(0, 0, 0, 0.2);
+    padding-left: 20px;
+}
+
+.city button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.errorMessage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    color: #1c1c1c;
+    font-size: 20px;
+    font-style: oblique;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.weatherContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:rgb(124, 89, 253);
+}
+.weatherContent .weatherdesc {
+    align-items: center;
+}
+
+.weatherImage {
+    text-transform: capitalize;
+}
+
+.weatherImage img {
+    width: 100%;
+    height: 100%;
+    margin: 10px auto 0 auto;
+}
+
+.weatherTemp {
+    color: rgb(124, 89, 253);
+    text-align: center;
+    font-size: 40px;
+    margin: 20px auto 10px auto;
+}
+.weatherCity {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(124, 89, 253);
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.weatherCity .location {
+    color: rgb(124, 89, 253);
+    margin-top: 8px;
+    font-size: 20px;
+    padding-right: 5px;
+}
+
+.weatherCity .humidity {
+    margin-top: 25px;
+    background-color: rgb(124, 89, 253);    
+    width: 130px;
+    height: 120px;
+    border-radius: 15px;
+    box-shadow: 4px 3px 10px 0px rgba(0,0,0,0.34);
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.weatherCity .humidityIcon {
+    color: #fff;
+    font-size: 32px;
+    margin-top: -10px;
+}
+.weatherCity .humidityPercent {
+    color: #fff;
+    margin-top: -11px;
+    font-weight: 300;
+}
+.weatherCity .humidityHeading {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+}
